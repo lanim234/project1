@@ -37,7 +37,7 @@ systemctl enable catalogue &>>/tmp/roboshop.log
 
 echo -e "\e[33m Start Catalogue \e[0m"
 systemctl start catalogue
-
+#
 echo -e "\e[33m Copy MongoDB Repo file \e[0m"
 cp /root/project1/bash/mongodb.repo /etc/yum.repos.d/mongo.repo
 
