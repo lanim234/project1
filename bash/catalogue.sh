@@ -28,7 +28,7 @@ npm install &>>/tmp/roboshop.log
 
 echo -e "\e[33m extracting frontend content \e[0m"
 cp /root/project1/bash/catalogue.service /etc/systemd/system/catalogue.service &>>/tmp/roboshop.log
-
+#
 echo -e "\e[33m Reload Daemon \e[0m"
 systemctl daemon-reload &>>/tmp/roboshop.log
 
