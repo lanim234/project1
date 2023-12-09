@@ -22,6 +22,8 @@ cd /app
 echo -e "\e[33m Extract catalogue content \e[0m"
 unzip /tmp/catalogue.zip &>>/tmp/roboshop.log
 
+echo -e "\e[33m Change to App Directory \e[0m"
+cd /app
 
 echo -e "\e[33m Install Npm \e[0m"
 npm install &>>/tmp/roboshop.log
