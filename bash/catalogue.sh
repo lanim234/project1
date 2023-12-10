@@ -46,6 +46,6 @@ cp /root/project1/bash/mongodb.repo /etc/yum.repos.d/mongo.repo &>>/tmp/roboshop
 echo -e "\e[33m Install MongoDB \e[0m"
 dnf install mongodb-org-shell -y /&>>/tmp/roboshop.log
 
-echo -e "\e[33m extracting frontend content \e[0m"
+echo -e "\e[33m Load Schema \e[0m"
 mongo --host mongodb-dev.lanim.store </app/schema/catalogue.js &>>/tmp/roboshop.log
 
