@@ -1,49 +1,52 @@
-echo -e "\e[35m Module Disable Nodejs \e[0m"
-dnf module disable nodejs -y &>>/tmp/roboshop.log
+source common.sh
+component=cart
 
-echo -e "\e[35m Module enable Nodejs \e[0m"
-dnf module enable nodejs:18 -y &>>/tmp/roboshop.log
+echo -e $color Module Disable Nodejs ${nocolor}"
+dnf module disable nodejs -y &>>${log_file}
 
-echo -e "\e[35m Install Nodejs \e[0m"
-dnf install nodejs -y &>>/tmp/roboshop.log
+echo -e ${color} Module enable Nodejs ${nocolor}"
+dnf module enable nodejs:18 -y &>>${log_file}
 
-echo -e "\e[35m Add user; Roboshop \e[0m"
-useradd roboshop &>>/tmp/roboshop.log
+echo -e ${color} Install Nodejs ${nocolor}"
+dnf install nodejs -y &>>${log_file}
 
-echo -e "\e[35m Make App Directory \e[0m"
-mkdir /app &>>/tmp/roboshop.log
+echo -e ${color} Add user; Roboshop ${nocolor}"
+useradd roboshop &>>${log_file}
 
-
-echo -e "\e[35m Download cart  Personalised artifacts \e[0m"
-curl -L -o /tmp/cart.zip https://roboshop-artifacts.s3.amazonaws.com/cart.zip &>>/tmp/roboshop.log
-
-
-echo -e "\e[35m Change to App Directory \e[0m"
-cd /app
+echo -e ${color} Make App Directory ${nocolor}"
+mkdir ${app_path} &>>${log_file}
 
 
-echo -e "\e[35m Extract downloaded file;  \e[0m"
-unzip /tmp/cart.zip &>>/tmp/roboshop.log
-
-echo -e "\e[35m Change to App Directory \e[0m"
-cd /app
+echo -e ${color} Download $component  Personalised artifacts ${nocolor}"
+curl -L -o /tmp/$component.zip https://roboshop-artifacts.s3.amazonaws.com/$component.zip &>>${log_file}
 
 
+echo -e ${color} Change to App Directory ${nocolor}"
+cd ${app_path}
 
-echo -e "\e[35m Install npm \e[0m"
-npm install &>>/tmp/roboshop.log
 
-echo -e "\e[35m Copy cart.service \e[0m"
-cp /home/centos/project1/bash/cart.service /etc/systemd/system/cart.service &>>/tmp/roboshop.log
+echo -e ${color} Extract downloaded file;  ${nocolor}"
+unzip /tmp/$component.zip &>>${log_file}
 
-echo -e  "\e[31m Reload Daemon\e[0m"
-systemctl daemon-reload &>>/tmp/roboshop.log
+echo -e ${color} Change to App Directory ${nocolor}"
+cd ${app_path}
 
-echo -e "\e[35m Enable cart \e[0m"
-systemctl enable cart &>>/tmp/roboshop.log
 
-echo -e "\e[35m Restart cart \e[0m"
-systemctl restart cart &>>/tmp/roboshop.log
+
+echo -e ${color} Install npm ${nocolor}"
+npm install &>>${log_file}
+
+echo -e ${color} Copy $component.service ${nocolor}"
+cp /home/centos/project1/bash/$component.service /etc/systemd/system/$component.service &>>${log_file}
+
+echo -e  "\e[31m Reload Daemon${nocolor}"
+systemctl daemon-reload &>>${log_file}
+
+echo -e ${color} Enable $component ${nocolor}"
+systemctl enable $component &>>${log_file}
+
+echo -e ${color} Restart $component ${nocolor}"
+systemctl restart $component &>>${log_file}
 
 
 
