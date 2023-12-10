@@ -9,13 +9,13 @@ echo -e "${color} Removing html content in nginx ${nocolor}"
 rm -rf /usr/share/nginx/html/* &>>${log_file}
 
 echo -e "${color} Removing html content in nginx ${nocolor}"
-curl -o /tmp/$component.zip https://roboshop-artifacts.s3.amazonaws.com/$component.zip &>>${log_file}
+curl -o /tmp/${component}.zip https://roboshop-artifacts.s3.amazonaws.com/${component}.zip &>>${log_file}
 
 echo -e "${color} changing to nginx\html folder ${nocolor}"
 cd /usr/share/nginx/html &>>${log_file}
 
-echo -e "${color} extracting $component content ${nocolor}"
-unzip /tmp/$component.zip &>>${log_file}
+echo -e "${color} extracting ${component} content ${nocolor}"
+unzip /tmp/${component}.zip &>>${log_file}
 
 echo -e "${color} copying roboshop.conf file ${nocolor}"
 cp /home/centos/project1/bash/roboshop.conf /etc/nginx/default.d/roboshop.conf &>>${log_file}
