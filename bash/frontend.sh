@@ -14,7 +14,7 @@ echo -e "\e[33m extracting frontend content \e[0m"
 unzip /tmp/frontend.zip &>>/tmp/roboshop.log
 
 echo -e "\e[33m copying roboshop.conf file \e[0m"
-cp /root/project1/bash/roboshop.conf /etc/nginx/default.d/roboshop.conf &>>/tmp/roboshop.log
+cp /home/centos/project1/bash/roboshop.conf /etc/nginx/default.d/roboshop.conf &>>/tmp/roboshop.log
 
 echo -e "\e[33m enable nginx \e[0m"
 systemctl enable nginx &>>/tmp/roboshop.log
