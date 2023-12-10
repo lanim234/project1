@@ -48,3 +48,16 @@ nodejs () {
   echo -e "${color} Start $component ${nocolor}"
   systemctl start $component &>>${log_file}
 }
+
+mongo_schema_setup () {
+  echo -e "\e[35m Copy Mongo.repo \e[0m"
+  cp /home/centos/project1/bash/mongo.repo /etc/yum.repos.d/mongo.repo &>>/tmp/roboshop.log
+
+  echo -e "\e[35m Install Mongodb \e[0m"
+  dnf install mongodb-org-shell -y &>>/tmp/roboshop.log
+
+  echo -e "\e[35m Load Schema \e[0m"
+  mongo --host mongodb-dev.lanim.store </app/schema/user.js &>>/tmp/roboshop.log
+
+
+}
