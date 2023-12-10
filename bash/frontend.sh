@@ -1,23 +1,27 @@
-echo -e "\e[31m install nginx \e[0m"
-dnf install nginx -y &>>/tmp/roboshop.log
+source common.sh
+component=frontend
 
-echo -e "\e[31m Removing html content in nginx \e[0m"
-rm -rf /usr/share/nginx/html/* &>>/tmp/roboshop.log
 
-echo -e "\e[33m Removing html content in nginx \e[0m"
-curl -o /tmp/frontend.zip https://roboshop-artifacts.s3.amazonaws.com/frontend.zip &>>/tmp/roboshop.log
+echo -e "${color} install nginx ${nocolor}"
+dnf install nginx -y &>>${log_file}
 
-echo -e "\e[33m changing to nginx\html folder \e[0m"
-cd /usr/share/nginx/html &>>/tmp/roboshop.log
+echo -e "${color} Removing html content in nginx ${nocolor}"
+rm -rf /usr/share/nginx/html/* &>>${log_file}
 
-echo -e "\e[33m extracting frontend content \e[0m"
-unzip /tmp/frontend.zip &>>/tmp/roboshop.log
+echo -e "${color} Removing html content in nginx ${nocolor}"
+curl -o /tmp/$component.zip https://roboshop-artifacts.s3.amazonaws.com/$component.zip &>>${log_file}
 
-echo -e "\e[33m copying roboshop.conf file \e[0m"
-cp /home/centos/project1/bash/roboshop.conf /etc/nginx/default.d/roboshop.conf &>>/tmp/roboshop.log
+echo -e "${color} changing to nginx\html folder ${nocolor}"
+cd /usr/share/nginx/html &>>${log_file}
 
-echo -e "\e[33m enable nginx \e[0m"
-systemctl enable nginx &>>/tmp/roboshop.log
+echo -e "${color} extracting $component content ${nocolor}"
+unzip /tmp/$component.zip &>>${log_file}
 
-echo -e "\e[33m restart nginx \e[0m"
-systemctl restart nginx &>>/tmp/roboshop.log
+echo -e "${color} copying roboshop.conf file ${nocolor}"
+cp /home/centos/project1/bash/roboshop.conf /etc/nginx/default.d/roboshop.conf &>>${log_file}
+
+echo -e "${color} enable nginx ${nocolor}"
+systemctl enable nginx &>>${log_file}
+
+echo -e "${color} restart nginx ${nocolor}"
+systemctl restart nginx &>>${log_file}
