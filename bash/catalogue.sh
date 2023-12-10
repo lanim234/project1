@@ -1,52 +1,56 @@
-echo -e "\e[33m Disable NodeJs \e[0m"
+component=catalogue
+color="\e[33m"
+nocolor="\e[0m"
+
+ echo -e "${color} Disable NodeJs ${nocolor}"
 dnf module disable nodejs -y &>>/tmp/roboshop.log
 
-echo -e "\e[33m Enable NodeJs \e[0m"
+echo -e "${color} Enable NodeJs ${nocolor}"
 dnf module enable nodejs:18 -y &>>/tmp/roboshop.log
 
-echo -e "\e[33m Install NodeJs \e[0m"
+echo -e "${color} Install NodeJs ${nocolor}"
 dnf install nodejs -y &>>/tmp/roboshop.log
 
-echo -e "\e[33m Add user \e[0m"
+echo -e "${color} Add user ${nocolor}"
 useradd roboshop &>>/tmp/roboshop.log
 
-echo -e "\e[33m Make Directory \e[0m"
+echo -e "${color} Make Directory ${nocolor}"
 mkdir /app &>>/tmp/roboshop.log
 
 
-echo -e "\e[33m Download catalogue Content \e[0m"
-curl -o /tmp/catalogue.zip https://roboshop-artifacts.s3.amazonaws.com/catalogue.zip &>>/tmp/roboshop.log
+echo -e "${color} Download  Content ${nocolor}"
+curl -o /tmp/$component.zip https://roboshop-artifacts.s3.amazonaws.com/$component.zip &>>/tmp/roboshop.log
 
-echo -e "\e[33m Change to App Directory \e[0m"
+echo -e "${color} Change to App Directory ${nocolor}"
 cd /app
 
-echo -e "\e[33m Extract catalogue content \e[0m"
-unzip /tmp/catalogue.zip &>>/tmp/roboshop.log
+echo -e "${color} Extract  content ${nocolor}"
+unzip /tmp/$component.zip &>>/tmp/roboshop.log
 
-echo -e "\e[33m Change to App Directory \e[0m"
+echo -e "${color} Change to App Directory ${nocolor}"
 cd /app
 
-echo -e "\e[33m Install Npm \e[0m"
+echo -e "${color} Install Npm ${nocolor}"
 npm install &>>/tmp/roboshop.log
 
-echo -e "\e[33m extracting frontend content \e[0m"
-cp /home/centos/project1/bash/catalogue.service /etc/systemd/system/catalogue.service &>>/tmp/roboshop.log
+echo -e "${color} extracting frontend content ${nocolor}"
+cp /home/centos/project1/bash/$component.service /etc/systemd/system/$component.service &>>/tmp/roboshop.log
 #
-echo -e "\e[33m Reload Daemon \e[0m"
+echo -e "${color} Reload Daemon ${nocolor}"
 systemctl daemon-reload &>>/tmp/roboshop.log
 
-echo -e "\e[33m Enable Catalogue \e[0m"
-systemctl enable catalogue &>>/tmp/roboshop.log
+echo -e "${color} Enable $component ${nocolor}"
+systemctl enable $component &>>/tmp/roboshop.log
 
-echo -e "\e[33m Start Catalogue \e[0m"
-systemctl start catalogue &>>/tmp/roboshop.log
+echo -e "${color} Start $component ${nocolor}"
+systemctl start $component &>>/tmp/roboshop.log
 #
-echo -e "\e[33m Copy MongoDB Repo file \e[0m"
+echo -e "${color} Copy MongoDB Repo file ${nocolor}"
 cp /home/centos/project1/bash/mongodb.repo /etc/yum.repos.d/mongo.repo &>>/tmp/roboshop.log
 
-echo -e "\e[33m Install MongoDB \e[0m"
+echo -e "${color} Install MongoDB ${nocolor}"
 dnf install mongodb-org-shell -y /&>>/tmp/roboshop.log
 
-echo -e "\e[33m Load Schema \e[0m"
-mongo --host mongodb-dev.lanim.store </app/schema/catalogue.js &>>/tmp/roboshop.log
+echo -e "${color} Load Schema ${nocolor}"
+mongo --host mongodb-dev.lanim.store </app/schema/$component.js &>>/tmp/roboshop.log
 
