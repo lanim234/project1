@@ -5,7 +5,7 @@ echo -e "\e[31m Removing html content in nginx \e[0m"
 rm -rf /usr/share/nginx/html/* &>>/tmp/roboshop.log
 
 echo -e "\e[33m Removing html content in nginx \e[0m"
-curl -o /tmp/frontend.zip https://roboshop-artifacts.s3.amazonaws.com/frontend.zip
+curl -o /tmp/frontend.zip https://roboshop-artifacts.s3.amazonaws.com/frontend.zip &>>/tmp/roboshop.log
 
 echo -e "\e[33m changing to nginx\html folder \e[0m"
 cd /usr/share/nginx/html &>>/tmp/roboshop.log
