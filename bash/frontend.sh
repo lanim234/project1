@@ -1,8 +1,8 @@
 echo -e "\e[31m install nginx \e[0m"
-dnf install nginx -y
+dnf install nginx -y &>>/tmp/roboshop.log
 
 echo -e "\e[31m Removing html content in nginx \e[0m"
-rm -rf /usr/share/nginx/html/*
+rm -rf /usr/share/nginx/html/* &>>/tmp/roboshop.log
 
 echo -e "\e[33m Removing html content in nginx \e[0m"
 curl -o /tmp/frontend.zip https://roboshop-artifacts.s3.amazonaws.com/frontend.zip
