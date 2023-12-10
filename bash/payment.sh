@@ -12,7 +12,7 @@ curl -L -o /tmp/payment.zip https://roboshop-artifacts.s3.amazonaws.com/payment.
 
 
 echo -e "\e[34m Change to App Directory \e[0m"
-cd /app &>>/tmp/roboshop.log
+cd /app
 
 
 echo -e "\e[34m Extract payment Artifact \e[0m"
@@ -27,7 +27,7 @@ pip3.6 install -r requirements.txt &>>/tmp/roboshop.log
 
 
 echo -e "\e[34m Copy file to payment.service \e[0m"
-cp /root/project1/bash/payment.service /etc/systemd/system/payment.service &>>/tmp/roboshop.log
+cp /home/centos/project1/bash/payment.service /etc/systemd/system/payment.service &>>/tmp/roboshop.log
 
 
 echo -e "\e[34m Reload Daemon \e[0m"
