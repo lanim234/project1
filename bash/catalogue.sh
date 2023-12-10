@@ -1,56 +1,60 @@
 component=catalogue
 color="\e[36m"
 nocolor="\e[0m"
+log_file="/tmp/roboshop.log"
+app_path="/app"
 
- echo -e "${color} Disable NodeJs ${nocolor}"
-dnf module disable nodejs -y &>>/tmp/roboshop.log
+
+
+echo -e "${color} Disable NodeJs ${nocolor}"
+dnf module disable nodejs -y &>>$log_file
 
 echo -e "${color} Enable NodeJs ${nocolor}"
-dnf module enable nodejs:18 -y &>>/tmp/roboshop.log
+dnf module enable nodejs:18 -y &>>$log_file
 
 echo -e "${color} Install NodeJs ${nocolor}"
-dnf install nodejs -y &>>/tmp/roboshop.log
+dnf install nodejs -y &>>$log_file
 
 echo -e "${color} Add user ${nocolor}"
-useradd roboshop &>>/tmp/roboshop.log
+useradd roboshop &>>$log_file
 
 echo -e "${color} Make Directory ${nocolor}"
-mkdir /app &>>/tmp/roboshop.log
+mkdir ${app_path} &>>$log_file
 
 
 echo -e "${color} Download  Content ${nocolor}"
-curl -o /tmp/$component.zip https://roboshop-artifacts.s3.amazonaws.com/$component.zip &>>/tmp/roboshop.log
+curl -o /tmp/$component.zip https://roboshop-artifacts.s3.amazonaws.com/$component.zip &>>$log_file
 
 echo -e "${color} Change to App Directory ${nocolor}"
-cd /app
+cd ${app_path}
 
 echo -e "${color} Extract  content ${nocolor}"
-unzip /tmp/$component.zip &>>/tmp/roboshop.log
+unzip /tmp/$component.zip &>>$log_file
 
 echo -e "${color} Change to App Directory ${nocolor}"
-cd /app
+cd ${app_path}
 
 echo -e "${color} Install Npm ${nocolor}"
-npm install &>>/tmp/roboshop.log
+npm install &>>$log_file
 
 echo -e "${color} extracting frontend content ${nocolor}"
-cp /home/centos/project1/bash/$component.service /etc/systemd/system/$component.service &>>/tmp/roboshop.log
+cp /home/centos/project1/bash/$component.service /etc/systemd/system/$component.service &>>$log_file
 #
 echo -e "${color} Reload Daemon ${nocolor}"
-systemctl daemon-reload &>>/tmp/roboshop.log
+systemctl daemon-reload &>>$log_file
 
 echo -e "${color} Enable $component ${nocolor}"
-systemctl enable $component &>>/tmp/roboshop.log
+systemctl enable $component &>>$log_file
 
 echo -e "${color} Start $component ${nocolor}"
-systemctl start $component &>>/tmp/roboshop.log
+systemctl start $component &>>$log_file
 #
 echo -e "${color} Copy MongoDB Repo file ${nocolor}"
-cp /home/centos/project1/bash/mongodb.repo /etc/yum.repos.d/mongo.repo &>>/tmp/roboshop.log
+cp /home/centos/project1/bash/mongodb.repo /etc/yum.repos.d/mongo.repo &>>$log_file
 
 echo -e "${color} Install MongoDB ${nocolor}"
-dnf install mongodb-org-shell -y /&>>/tmp/roboshop.log
+dnf install mongodb-org-shell -y /&>>$log_file
 
 echo -e "${color} Load Schema ${nocolor}"
-mongo --host mongodb-dev.lanim.store </app/schema/$component.js &>>/tmp/roboshop.log
+mongo --host mongodb-dev.lanim.store <${app_path}/schema/$component.js &>>$log_file
 
