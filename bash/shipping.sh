@@ -31,7 +31,7 @@ mv target/shipping-1.0.jar shipping.jar &>>/tmp/roboshop.log
 
 
 echo -e "\e[32m Copy file from Shipping.service \e[0m"
-cp /root/project1/bash/shipping.service /etc/systemd/system/shipping.service &>>/tmp/roboshop.log
+cp /home/centos/project1/bash/shipping.service /etc/systemd/system/shipping.service &>>/tmp/roboshop.log
 
 echo -e "\e[32m Reload Daemon \e[0m"
 systemctl daemon-reload &>>/tmp/roboshop.log
