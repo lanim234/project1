@@ -17,19 +17,19 @@ echo -e "\e[35m Download User  Personalised artifacts \e[0m"
 curl -L -o /tmp/user.zip https://roboshop-artifacts.s3.amazonaws.com/user.zip &>>/tmp/roboshop.log
 
 echo -e "\e[35m Change to App Directory \e[0m"
-cd /app &>>/tmp/roboshop.log
+cd /app
 
 echo -e "\e[35m Extract downloaded file; user \e[0m"
 unzip /tmp/user.zip &>>/tmp/roboshop.log
 
 echo -e "\e[35m Change to App Directory\e[0m"
-cd /app &>>/tmp/roboshop.log
+cd /app
 
 echo -e "\e[35m Install npm \e[0m"
 npm install &>>/tmp/roboshop.log
 
 echo -e "\e[35m Copy User.service \e[0m"
-cp root/project1/bash/user.service /etc/systemd/system/user.service &>>/tmp/roboshop.log
+cp /home/centos/project1/bash/user.service /etc/systemd/system/user.service &>>/tmp/roboshop.log
 
 echo -e  "\e[31m Reload Daemon\e[0m"
 systemctl daemon-reload &>>/tmp/roboshop.log
@@ -41,7 +41,7 @@ echo -e "\e[35m Restart User \e[0m"
 systemctl restart user &>>/tmp/roboshop.log
 
 echo -e "\e[35m Copy Mongo.repo \e[0m"
-cp root/project1/bash/mongo.repo /etc/yum.repos.d/mongo.repo &>>/tmp/roboshop.log
+cp /home/centos/project1/bash/mongo.repo /etc/yum.repos.d/mongo.repo &>>/tmp/roboshop.log
 
 echo -e "\e[35m Install Mongodb \e[0m"
 dnf install mongodb-org-shell -y &>>/tmp/roboshop.log
