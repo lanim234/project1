@@ -93,7 +93,25 @@ maven () {
   echo -e "${color} Move file to shippimng.jar ${nocolor}"
   mv target/${component}-1.0.jar ${component}.jar &>>${log_file}
 
+  mysql_schema_setup
 
   systemD_setup
+
+}
+
+python () {
+
+  echo -e "${color} Install Python ${nocolor}"
+  dnf install python36 gcc python3-devel -y &>>${log_file}
+
+  app_presetup
+
+
+  echo -e "${color} download dependencies ${nocolor}"
+  pip3.6 install -r requirements.txt &>>${log_file}
+
+
+  systemD_setup
+
 
 }
