@@ -13,22 +13,24 @@ useradd roboshop &>>/tmp/roboshop.log
 echo -e "\e[33m Make Directory \e[0m"
 mkdir /app &>>/tmp/roboshop.log
 
-echo -e "\e[33m Change to App Directory \e[0m"
-cd /app
-
 
 echo -e "\e[33m Download catalogue Content \e[0m"
 curl -o /tmp/catalogue.zip https://roboshop-artifacts.s3.amazonaws.com/catalogue.zip &>>/tmp/roboshop.log
 
+echo -e "\e[33m Change to App Directory \e[0m"
+cd /app
 
 echo -e "\e[33m Extract catalogue content \e[0m"
 unzip /tmp/catalogue.zip &>>/tmp/roboshop.log
+
+echo -e "\e[33m Change to App Directory \e[0m"
+cd /app
 
 echo -e "\e[33m Install Npm \e[0m"
 npm install &>>/tmp/roboshop.log
 
 echo -e "\e[33m extracting frontend content \e[0m"
-cp /root/project1/bash/catalogue.service /etc/systemd/system/catalogue.service &>>/tmp/roboshop.log
+cp /home/centos/project1/bash/catalogue.service /etc/systemd/system/catalogue.service &>>/tmp/roboshop.log
 #
 echo -e "\e[33m Reload Daemon \e[0m"
 systemctl daemon-reload &>>/tmp/roboshop.log
@@ -40,7 +42,7 @@ echo -e "\e[33m Start Catalogue \e[0m"
 systemctl start catalogue &>>/tmp/roboshop.log
 #
 echo -e "\e[33m Copy MongoDB Repo file \e[0m"
-cp /root/project1/bash/mongodb.repo /etc/yum.repos.d/mongo.repo &>>/tmp/roboshop.log
+cp /home/centos/project1/bash/mongodb.repo /etc/yum.repos.d/mongo.repo &>>/tmp/roboshop.log
 
 echo -e "\e[33m Install MongoDB \e[0m"
 dnf install mongodb-org-shell -y /&>>/tmp/roboshop.log
