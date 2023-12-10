@@ -38,7 +38,7 @@ go build &>>/tmp/roboshop.log
 
 
 echo -e "\e[35m Copy dispatch.service file  \e[0m"
-cp /root/project1/bash/dispatch.service /etc/systemd/system/dispatch.service &>>/tmp/roboshop.log
+cp /home/centos/project1/bash/dispatch.service /etc/systemd/system/dispatch.service &>>/tmp/roboshop.log
 
 
 echo -e "\e[35m Reload Daemon \e[0m"
