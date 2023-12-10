@@ -13,11 +13,13 @@ useradd roboshop &>>/tmp/roboshop.log
 echo -e "\e[33m Make Directory \e[0m"
 mkdir /app &>>/tmp/roboshop.log
 
+echo -e "\e[33m Change to App Directory \e[0m"
+cd /app
+
+
 echo -e "\e[33m Download catalogue Content \e[0m"
 curl -o /tmp/catalogue.zip https://roboshop-artifacts.s3.amazonaws.com/catalogue.zip &>>/tmp/roboshop.log
 
-echo -e "\e[33m Change to App Directory \e[0m"
-cd /app
 
 echo -e "\e[33m Extract catalogue content \e[0m"
 unzip /tmp/catalogue.zip &>>/tmp/roboshop.log
