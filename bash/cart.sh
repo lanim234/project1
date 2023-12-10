@@ -13,17 +13,16 @@ useradd roboshop &>>/tmp/roboshop.log
 echo -e "\e[35m Make App Directory \e[0m"
 mkdir /app &>>/tmp/roboshop.log
 
+echo -e "\e[35m Change to App Directory \e[0m"
+cd /app
+
 echo -e "\e[35m Download cart  Personalised artifacts \e[0m"
 curl -L -o /tmp/cart.zip https://roboshop-artifacts.s3.amazonaws.com/cart.zip &>>/tmp/roboshop.log
 
-echo -e "\e[35m Change to App Directory \e[0m"
-cd /app
 
 echo -e "\e[35m Extract downloaded file;  \e[0m"
 unzip /tmp/cart.zip &>>/tmp/roboshop.log
 
-echo -e "\e[35m Change to App Directory\e[0m"
-cd /app
 
 echo -e "\e[35m Install npm \e[0m"
 npm install &>>/tmp/roboshop.log
