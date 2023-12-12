@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="26d57fad-a509-422a-a9c3-82effee522fc" name="Changes" comment="payment configuration" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2ZJa931Aa7rTwuBRkfigfGfFscw" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/adeniyimegbabi/project1/Ansible-lanimstore"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Ansible-lanimstore" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="project1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="project1" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="project1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="project1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="26d57fad-a509-422a-a9c3-82effee522fc" name="Changes" comment="" />
+      <created>1702142481306</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702142481306</updated>
+    </task>
+    <task id="LOCAL-00014" summary="dispatch configuration">
+      <option name="closed" value="true" />
+      <created>1702175007083</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1702175007083</updated>
+    </task>
+    <task id="LOCAL-00015" summary="frontend configuration">
+      <option name="closed" value="true" />
+      <created>1702175048500</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1702175048500</updated>
+    </task>
+    <task id="LOCAL-00016" summary="mongodb configuration">
+      <option name="closed" value="true" />
+      <created>1702175073049</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1702175073049</updated>
+    </task>
+    <task id="LOCAL-00017" summary="mysql configuration">
+      <option name="closed" value="true" />
+      <created>1702175097999</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1702175097999</updated>
+    </task>
+    <task id="LOCAL-00018" summary="payment configuration">
+      <option name="closed" value="true" />
+      <created>1702175135583</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1702175135583</updated>
+    </task>
+    <task id="LOCAL-00019" summary="rabbitmq configuration">
+      <option name="closed" value="true" />
+      <created>1702175176733</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1702175176733</updated>
+    </task>
+    <task id="LOCAL-00020" summary="redis configuration">
+      <option name="closed" value="true" />
+      <created>1702175201584</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1702175201584</updated>
+    </task>
+    <task id="LOCAL-00021" summary="shipping configuration">
+      <option name="closed" value="true" />
+      <created>1702175238120</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1702175238120</updated>
+    </task>
+    <task id="LOCAL-00022" summary="user configuration">
+      <option name="closed" value="true" />
+      <created>1702175271869</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1702175271869</updated>
+    </task>
+    <task id="LOCAL-00023" summary="cart configuration">
+      <option name="closed" value="true" />
+      <created>1702180767912</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1702180767912</updated>
+    </task>
+    <task id="LOCAL-00024" summary="catalogue configuration">
+      <option name="closed" value="true" />
+      <created>1702181284018</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1702181284018</updated>
+    </task>
+    <task id="LOCAL-00025" summary="catalogue configuration">
+      <option name="closed" value="true" />
+      <created>1702181568703</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1702181568703</updated>
+    </task>
+    <task id="LOCAL-00026" summary="cart configuration">
+      <option name="closed" value="true" />
+      <created>1702182401978</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1702182401978</updated>
+    </task>
+    <task id="LOCAL-00027" summary="mysql configuration">
+      <option name="closed" value="true" />
+      <created>1702182563168</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1702182563168</updated>
+    </task>
+    <task id="LOCAL-00028" summary="cart configuration">
+      <option name="closed" value="true" />
+      <created>1702183050277</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1702183050277</updated>
+    </task>
+    <task id="LOCAL-00029" summary="catalogue configuration">
+      <option name="closed" value="true" />
+      <created>1702183516379</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1702183516379</updated>
+    </task>
+    <task id="LOCAL-00030" summary="frontend configuration">
+      <option name="closed" value="true" />
+      <created>1702210072966</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1702210072966</updated>
+    </task>
+    <task id="LOCAL-00031" summary="frontend configuration">
+      <option name="closed" value="true" />
+      <created>1702210505174</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1702210505174</updated>
+    </task>
+    <task id="LOCAL-00032" summary="mongodb configuration">
+      <option name="closed" value="true" />
+      <created>1702210741555</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1702210741555</updated>
+    </task>
+    <task id="LOCAL-00033" summary="mongodb configuration">
+      <option name="closed" value="true" />
+      <created>1702210977869</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1702210977869</updated>
+    </task>
+    <task id="LOCAL-00034" summary="mongodb configuration">
+      <option name="closed" value="true" />
+      <created>1702211527011</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1702211527011</updated>
+    </task>
+    <task id="LOCAL-00035" summary="redis configuration">
+      <option name="closed" value="true" />
+      <created>1702211978511</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1702211978512</updated>
+    </task>
+    <task id="LOCAL-00036" summary="user configuration">
+      <option name="closed" value="true" />
+      <created>1702212403330</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1702212403330</updated>
+    </task>
+    <task id="LOCAL-00037" summary="cart configuration">
+      <option name="closed" value="true" />
+      <created>1702213024159</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1702213024159</updated>
+    </task>
+    <task id="LOCAL-00038" summary="mysql configuration">
+      <option name="closed" value="true" />
+      <created>1702213822341</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1702213822342</updated>
+    </task>
+    <task id="LOCAL-00039" summary="shipping configuration">
+      <option name="closed" value="true" />
+      <created>1702214081927</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1702214081927</updated>
+    </task>
+    <task id="LOCAL-00040" summary="payment configuration">
+      <option name="closed" value="true" />
+      <created>1702214581954</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1702214581954</updated>
+    </task>
+    <task id="LOCAL-00041" summary="dispatch configuration">
+      <option name="closed" value="true" />
+      <created>1702214927214</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1702214927214</updated>
+    </task>
+    <task id="LOCAL-00042" summary="catalogue configuration">
+      <option name="closed" value="true" />
+      <created>1702219531448</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1702219531448</updated>
+    </task>
+    <task id="LOCAL-00043" summary="catalogue configuration">
+      <option name="closed" value="true" />
+      <created>1702220288896</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1702220288896</updated>
+    </task>
+    <task id="LOCAL-00044" summary="catalogue configuration">
+      <option name="closed" value="true" />
+      <created>1702221707949</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1702221707949</updated>
+    </task>
+    <task id="LOCAL-00045" summary="cart configuration">
+      <option name="closed" value="true" />
+      <created>1702223248486</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1702223248486</updated>
+    </task>
+    <task id="LOCAL-00046" summary="catalogue configuration">
+      <option name="closed" value="true" />
+      <created>1702223337570</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1702223337570</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Variable File">
+      <option name="closed" value="true" />
+      <created>1702223373970</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1702223373970</updated>
+    </task>
+    <task id="LOCAL-00048" summary="catalogue configuration">
+      <option name="closed" value="true" />
+      <created>1702223857010</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1702223857010</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Variable file">
+      <option name="closed" value="true" />
+      <created>1702223882543</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1702223882543</updated>
+    </task>
+    <task id="LOCAL-00050" summary="dispatch configuration">
+      <option name="closed" value="true" />
+      <created>1702228509825</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1702228509825</updated>
+    </task>
+    <task id="LOCAL-00051" summary="frontend configuration">
+      <option name="closed" value="true" />
+      <created>1702228536308</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1702228536308</updated>
+    </task>
+    <task id="LOCAL-00052" summary="cart configuration">
+      <option name="closed" value="true" />
+      <created>1702229056999</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1702229056999</updated>
+    </task>
+    <task id="LOCAL-00053" summary="catalogue configuration">
+      <option name="closed" value="true" />
+      <created>1702229083966</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1702229083966</updated>
+    </task>
+    <task id="LOCAL-00054" summary="variable file">
+      <option name="closed" value="true" />
+      <created>1702229122348</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1702229122348</updated>
+    </task>
+    <task id="LOCAL-00055" summary="catalogue configuration">
+      <option name="closed" value="true" />
+      <created>1702230132322</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1702230132322</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Variable file">
+      <option name="closed" value="true" />
+      <created>1702230167986</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1702230167986</updated>
+    </task>
+    <task id="LOCAL-00057" summary="user configuration">
+      <option name="closed" value="true" />
+      <created>1702230188698</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1702230188698</updated>
+    </task>
+    <task id="LOCAL-00058" summary="variable">
+      <option name="closed" value="true" />
+      <created>1702235862182</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1702235862182</updated>
+    </task>
+    <task id="LOCAL-00059" summary="shipping configuration">
+      <option name="closed" value="true" />
+      <created>1702235891580</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1702235891580</updated>
+    </task>
+    <task id="LOCAL-00060" summary="variable">
+      <option name="closed" value="true" />
+      <created>1702238696577</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1702238696577</updated>
+    </task>
+    <task id="LOCAL-00061" summary="payment configuration">
+      <option name="closed" value="true" />
+      <created>1702238719958</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1702238719958</updated>
+    </task>
+    <task id="LOCAL-00062" summary="payment configuration">
+      <option name="closed" value="true" />
+      <created>1702239636421</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1702239636421</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.service" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="rabbitmq configuration" />
+    <MESSAGE value="mongodb configuration" />
+    <MESSAGE value="redis configuration" />
+    <MESSAGE value="mysql configuration" />
+    <MESSAGE value="Variable File" />
+    <MESSAGE value="dispatch configuration" />
+    <MESSAGE value="frontend configuration" />
+    <MESSAGE value="cart configuration" />
+    <MESSAGE value="common configuration" />
+    <MESSAGE value="variable file" />
+    <MESSAGE value="catalogue configuration" />
+    <MESSAGE value="Variable file" />
+    <MESSAGE value="user configuration" />
+    <MESSAGE value="shipping configuration" />
+    <MESSAGE value="variable" />
+    <MESSAGE value="payment configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="payment configuration" />
+  </component>
+</project>
