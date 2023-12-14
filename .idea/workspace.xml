@@ -5,30 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26d57fad-a509-422a-a9c3-82effee522fc" name="Changes" comment="ans">
-      <change afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/common/defaults/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/common/files/mongodb.repo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/common/tasks/app_presetup.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/common/tasks/maven.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/common/tasks/mongo_schema_setup.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/common/tasks/mysq_schema_setup.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/common/tasks/nodejs.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/common/tasks/python.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/common/tasks/systemD_setup.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ansible-lanimstore" beforeDir="false" afterPath="$PROJECT_DIR$/Ansible-lanimstore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/cart/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/cart/tasks/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/cart/template/cart.service" beforeDir="false" afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/cart/template/cart.service" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/catalogue/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/catalogue/tasks/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/catalogue/template/catalog.service" beforeDir="false" afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/catalogue/template/catalog.service" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/frontend/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/frontend/tasks/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/frontend/template/roboshop.conf" beforeDir="false" afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/frontend/template/roboshop.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/payment/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/payment/tasks/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/rabbitmq/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/rabbitmq/tasks/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/shipping/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/shipping/tasks/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/shipping/template/shipping.service" beforeDir="false" afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/shipping/template/shipping.service" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/user/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/user/tasks/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/user/template/user.service" beforeDir="false" afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/user/template/user.service" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/frontend/template/nginx.conf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,14 +100,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1702142481306</updated>
-    </task>
-    <task id="LOCAL-00017" summary="mysql configuration">
-      <option name="closed" value="true" />
-      <created>1702175097999</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1702175097999</updated>
     </task>
     <task id="LOCAL-00018" summary="payment configuration">
       <option name="closed" value="true" />
@@ -514,7 +485,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702377588445</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="ans">
+      <option name="closed" value="true" />
+      <created>1702519588565</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1702519588566</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="UnknownFeatures">
