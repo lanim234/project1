@@ -5,7 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26d57fad-a509-422a-a9c3-82effee522fc" name="Changes" comment="ans">
+      <change afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/common/defaults/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/common/files/mongodb.repo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/common/tasks/app_presetup.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/common/tasks/maven.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/common/tasks/mongo_schema_setup.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/common/tasks/mysq_schema_setup.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/common/tasks/nodejs.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/common/tasks/python.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/common/tasks/systemD_setup.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible-lanimstore" beforeDir="false" afterPath="$PROJECT_DIR$/Ansible-lanimstore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/cart/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/cart/tasks/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/cart/template/cart.service" beforeDir="false" afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/cart/template/cart.service" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/catalogue/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/catalogue/tasks/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/catalogue/template/catalog.service" beforeDir="false" afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/catalogue/template/catalog.service" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/frontend/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/frontend/tasks/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/frontend/template/roboshop.conf" beforeDir="false" afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/frontend/template/roboshop.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/payment/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/payment/tasks/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/rabbitmq/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/rabbitmq/tasks/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/shipping/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/shipping/tasks/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/shipping/template/shipping.service" beforeDir="false" afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/shipping/template/shipping.service" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/user/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/user/tasks/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/user/template/user.service" beforeDir="false" afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/user/template/user.service" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +37,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Ansible-lanimstore" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -88,38 +112,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="tests" factoryName="Autodetect">
-      <module name="project1" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <module name="project1" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method v="2" />
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -129,22 +121,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1702142481306</updated>
-    </task>
-    <task id="LOCAL-00015" summary="frontend configuration">
-      <option name="closed" value="true" />
-      <created>1702175048500</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1702175048500</updated>
-    </task>
-    <task id="LOCAL-00016" summary="mongodb configuration">
-      <option name="closed" value="true" />
-      <created>1702175073049</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1702175073049</updated>
     </task>
     <task id="LOCAL-00017" summary="mysql configuration">
       <option name="closed" value="true" />
@@ -522,7 +498,23 @@
       <option name="project" value="LOCAL" />
       <updated>1702354447535</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="ans">
+      <option name="closed" value="true" />
+      <created>1702376694354</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1702376694354</updated>
+    </task>
+    <task id="LOCAL-00065" summary="ans">
+      <option name="closed" value="true" />
+      <created>1702377588445</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1702377588445</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="UnknownFeatures">
