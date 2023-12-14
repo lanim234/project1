@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="26d57fad-a509-422a-a9c3-82effee522fc" name="Changes" comment="ans">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible-lanimstore" beforeDir="false" afterPath="$PROJECT_DIR$/Ansible-lanimstore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/frontend/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/frontend/tasks/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ansible-lanimstore/Ansible Scripts/roles/frontend/template/nginx.conf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,14 +100,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1702142481306</updated>
-    </task>
-    <task id="LOCAL-00018" summary="payment configuration">
-      <option name="closed" value="true" />
-      <created>1702175135583</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1702175135583</updated>
     </task>
     <task id="LOCAL-00019" summary="rabbitmq configuration">
       <option name="closed" value="true" />
@@ -493,7 +485,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702519588566</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="ans">
+      <option name="closed" value="true" />
+      <created>1702522470102</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1702522470102</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="UnknownFeatures">
